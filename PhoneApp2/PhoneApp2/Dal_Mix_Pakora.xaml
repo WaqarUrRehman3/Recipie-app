@@ -1,0 +1,98 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PhoneApp2.Dal_Mix_Pakora"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+ 
+        <!--LayoutRoot is the root grid where all page content is placed-->
+        <Grid>
+            <Grid.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/Images/Dal_Mix_Pakora_Recipe.JPG" Opacity="0.3"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel>
+            <TextBlock TextWrapping="Wrap" Text="DESI COOKBOOK" Style="{StaticResource PhoneTextBlockBase}" FontSize="24"/>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <HyperlinkButton FontSize="45" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Naviagte_Back">&lt;</HyperlinkButton>
+                <TextBlock TextWrapping="NoWrap" TextTrimming="WordEllipsis" Text="Dal Mix Pakora" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}"/>
+            </StackPanel>
+            </StackPanel>
+            <Grid Grid.Row="1" Margin="10,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="241*"/>
+                    <RowDefinition Height="396*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Image Source="/Assets/Images/Dal_Mix_Pakora_Recipe.JPG" Stretch="UniformToFill"/>
+                <ScrollViewer Grid.Row="1">
+                <TextBlock TextWrapping="Wrap" Text="INGREDIENTS:
+                           
+                           
+1/2 cup split wash moong dal
+1/2 cup basin
+1 cup potatoes peeled and shredded
+2 tablespoon finely chopped cilantro
+4-5 green chili minced adjust to taste
+1 tablespoon finely grated ginger
+1 teaspoon cumin seeds
+1/8 teaspoon of baking soda
+1 teaspoon salt adjust to taste
+Oil to fry
+
+                           
+                           
+COOKING DIRECTIONS:
+                           
+                           
+Wash and soak dal over night.
+
+Grind dal coarsely using very little water.
+
+Add all the ingredients to the dal batter, potatoes, cilantro, green chili, ginger, cumin seeds and salt, beat the batter for 2-3 minutes this will make the batter light. 
+
+Add the water if needed, batter should be soft.
+
+Heat the oil in a frying pan on medium high heat.
+
+The frying pan should have about 1 inch of oil. 
+
+To check if the oil is ready, put one drop of batter in oil. 
+
+The batter should sizzle and come up but not change color right away. 
+
+If oil is very hot vadas will not cook through and will not be crispy.
+
+Place about 1 tablespoon of batter into the oil. Fry pakora until golden-brown all around.
+
+Moong Dal pakoras should be crispy from outside and should 
+
+be soft inside." FontSize="23"/>
+                </ScrollViewer>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" >
+                    <TextBlock TextWrapping="Wrap" Text="Preparation time :" Foreground="#FF2478F1" >
+
+                    </TextBlock>
+                    <TextBlock TextWrapping="Wrap" Text=" 15 min" >
+
+                    </TextBlock>
+
+                </StackPanel>
+            </Grid>
+
+        </Grid>
+
+</phone:PhoneApplicationPage>

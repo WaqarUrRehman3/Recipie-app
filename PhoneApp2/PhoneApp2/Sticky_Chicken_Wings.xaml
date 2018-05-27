@@ -1,0 +1,58 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PhoneApp2.Sticky_Chicken_Wings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+ 
+        <!--LayoutRoot is the root grid where all page content is placed-->
+        <Grid>
+            <Grid.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/Images/Sticky_Chicken_Wings_Recipe.jpg" Opacity="0.3"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel>
+            <TextBlock TextWrapping="Wrap" Text="DESI COOKBOOK" Style="{StaticResource PhoneTextBlockBase}" FontSize="24"/>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <HyperlinkButton FontSize="45" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Naviagte_Back">&lt;</HyperlinkButton>
+                <TextBlock TextWrapping="NoWrap" TextTrimming="WordEllipsis" Text="Sticky Chicken Wings" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}"/>
+            </StackPanel>
+            </StackPanel>
+            <Grid Grid.Row="1" Margin="10,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="241*"/>
+                    <RowDefinition Height="396*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Image Source="/Assets/Images/Sticky_Chicken_Wings_Recipe.jpg" Stretch="UniformToFill"/>
+                <ScrollViewer Grid.Row="1">
+                    <TextBlock TextWrapping="Wrap" Text="INGRDIENTS: Chicken Wings 1-1/2 kg, White Chili ¼ tsp, Garlic 2 Cloves, Fresh Red Chili 1, Spring Onion 2, Soya Sauce 3 tbsp, Brown Sugar 4 tbsp, Five Spice Powder 1 tbsp, Vinegar 1 tbsp                          
+                           DIRECTIONS: In a saucepan add 4 tbsp brown sugar and cook. After this add 3 tbsp soya sauce, 1 tbsp vinegar, 1 tbsp five spice powder. Mix well. Along with this add ¼ tsp white chili. Now in a frying pan heat 1 tbsp oil and add 2 cloves of garlic and 2 spring onions. Fry for 30 seconds and dish out. In the end add chicken wings and 1 fresh red chili and pour into dish along with sticky sauce. Ready to serve." FontSize="23"/>
+                </ScrollViewer>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" >
+                    <TextBlock TextWrapping="Wrap" Text="Preparation time :" Foreground="#FF2478F1" >
+
+                    </TextBlock>
+                    <TextBlock TextWrapping="Wrap" Text=" 15 min" >
+
+                    </TextBlock>
+
+                </StackPanel>
+            </Grid>
+
+        </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,78 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PhoneApp2.Firey_Chicken_wings_in_hot_sauce"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+ 
+        <!--LayoutRoot is the root grid where all page content is placed-->
+        <Grid>
+            <Grid.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/Images/Firey_Chicken_wings_in_hot_sauce_Recipe.JPG" Opacity="0.3"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel>
+            <TextBlock TextWrapping="Wrap" Text="DESI COOKBOOK" Style="{StaticResource PhoneTextBlockBase}" FontSize="24"/>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <HyperlinkButton FontSize="45" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Naviagte_Back">&lt;</HyperlinkButton>
+                <TextBlock TextWrapping="NoWrap" TextTrimming="WordEllipsis" Text="Firey Chicken wings in hot sauce" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}"/>
+            </StackPanel>
+            </StackPanel>
+            <Grid Grid.Row="1" Margin="10,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="241*"/>
+                    <RowDefinition Height="396*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Image Source="/Assets/Images/Firey_Chicken_wings_in_hot_sauce_Recipe.JPG" Stretch="UniformToFill"/>
+                <ScrollViewer Grid.Row="1">
+                <TextBlock TextWrapping="Wrap" Text="INGREDIENTS:
+                           
+                           
+10 tablespoons hot sauce
+10 tablespoons unsalted butter or margarine
+1 and 1/2 tablespoons white vinegar
+1/2 teaspoon Worcestershire sauce
+1/8 teaspoon garlic powder
+1/4 teaspoon cayenne pepper
+salt to taste
+                           
+                           
+
+COOKING DIRECTIONS:
+                           
+                           
+
+Mix all the ingredients in a saucepan, and over low heat bring to a simmer, stirring occasionally, and then turn off.
+
+After the wings are cooked, transfer to a large mixing bowl. 
+
+Pour the sauce over the hot wings and toss with a spoon or spatula to completely coat." FontSize="23"/>
+                </ScrollViewer>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" >
+                    <TextBlock TextWrapping="Wrap" Text="Preparation time :" Foreground="#FF2478F1" >
+
+                    </TextBlock>
+                    <TextBlock TextWrapping="Wrap" Text=" 15 min" >
+
+                    </TextBlock>
+
+                </StackPanel>
+            </Grid>
+
+        </Grid>
+
+</phone:PhoneApplicationPage>

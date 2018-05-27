@@ -1,0 +1,99 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PhoneApp2.Chicken_Roll"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+ 
+        <!--LayoutRoot is the root grid where all page content is placed-->
+        <Grid>
+            <Grid.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/Images/Chicken_Roll_Recipe.jpg" Opacity="0.3"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel>
+            <TextBlock TextWrapping="Wrap" Text="DESI COOKBOOK" Style="{StaticResource PhoneTextBlockBase}" FontSize="24"/>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <HyperlinkButton FontSize="45" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Naviagte_Back">&lt;</HyperlinkButton>
+                <TextBlock TextWrapping="NoWrap" TextTrimming="WordEllipsis" Text="Chicken Roll" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}"/>
+            </StackPanel>
+            </StackPanel>
+            <Grid Grid.Row="1" Margin="10,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="241*"/>
+                    <RowDefinition Height="396*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Image Source="/Assets/Images/Chicken_Roll_Recipe.jpg" Stretch="UniformToFill"/>
+                <ScrollViewer Grid.Row="1">
+                <TextBlock TextWrapping="Wrap" Text="INGREDIENTS:
+                           
+                           
+Chicken boneless 300 gm
+Black pepper ½ tsp (crushed)
+Tikka spice 1, ½ tbsp
+Lemon juice 2 – 3 tbsp
+Garlic 1 tbsp (chopped)
+Butter as required
+Salt to taste
+Coal 1 piece
+Oil for frying
+For Chapatti:
+Flour 2 cup
+Salt a pinch
+                           
+                           
+
+COOKING DIRECTIONS:
+                           
+                           
+In big bowl, sift flour with salt.
+
+Now add required lukewarm water and knead a smooth dough.
+
+Place in a air tight box and refrigerate for half and hour.
+
+Divide dough in small balls and roll them out into a thin circular on floured surface.
+
+Cook the chapattis on a griddle pan until done.
+
+For Filling: 
+In a mixing bowl, add cubed chicken, chopped garlic, black pepper, tikka spice and lemon juice, mix well.
+
+Melt butter and fry chicken till golden.
+
+Take a piece of burning coal on bread; and place it on chicken, now drizzle a few drops of oil over it.
+
+Immediately cover and let it sit for 5 minutes.
+
+Now take a chapatti spread a layer of butter over it, then add a bit of chicken and roll it.
+
+Repeat with the remaining chapattis and serve." FontSize="23"/>
+                </ScrollViewer>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" >
+                    <TextBlock TextWrapping="Wrap" Text="Preparation time :" Foreground="#FF2478F1" >
+
+                    </TextBlock>
+                    <TextBlock TextWrapping="Wrap" Text=" 15 min" >
+
+                    </TextBlock>
+
+                </StackPanel>
+            </Grid>
+
+        </Grid>
+
+</phone:PhoneApplicationPage>
